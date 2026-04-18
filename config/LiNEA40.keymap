@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -173,10 +173,10 @@
 
         NUMBER {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                         &kp N7        &kp N8        &kp N9        &kp EQUAL  &trans
-&trans  &trans  &trans  &trans  &trans                         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &kp MINUS
-&trans  &trans  &trans  &trans  &trans                         &kp N1        &kp N2        &kp N3        &kp ASTRK  &kp SLASH
-&trans  &trans  &trans  &trans  &trans  &trans    &kp INT_YEN  &kp NUMBER_0                &kp DOT       &trans     &trans
+&kp N1  &kp N2  &kp N3  &kp N4  &kp N5                    &kp N6  &kp N7  &kp N8     &kp N9     &kp N0
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &kp EQUAL  &kp PLUS   &kp MINUS
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &kp SLASH  &kp ASTRK  &kp INT_YEN
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &kp DOT    &trans     &trans
             >;
         };
 
@@ -184,10 +184,10 @@
 
         FUNCTION {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4   &kp F5                     &trans     &kp PRINTSCREEN  &trans     &trans     &trans
-&kp F6  &kp F7  &kp F8  &kp F9   &kp F10                    &kp RC(Z)  &kp RC(C)        &kp RC(X)  &kp RC(V)  &trans
-&trans  &trans  &trans  &kp F11  &kp F12                    &trans     &trans           &trans     &trans     &trans
-&trans  &trans  &trans  &trans   &trans   &trans    &trans  &trans                      &trans     &trans     &trans
+&kp F1  &kp F2  &kp F3  &kp F4   &kp F5                     &kp F6     &kp F7     &kp F8     &kp F9     &kp F10
+&trans  &trans  &trans  &kp F11  &kp F12                    &kp RC(Z)  &kp RC(C)  &kp RC(X)  &kp RC(V)  &kp PRINTSCREEN
+&trans  &trans  &trans  &trans   &trans                     &trans     &trans     &trans     &trans     &trans
+&trans  &trans  &trans  &trans   &trans   &trans    &trans  &trans                &trans     &trans     &trans
             >;
         };
 
