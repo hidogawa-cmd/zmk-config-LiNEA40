@@ -13,6 +13,17 @@
         ;
 };
 
+//20260502追記ここから
+&zip_temp_layer {
+    excluded-positions = <
+        16 // J
+        17 // K
+        18 // l
+    >;
+    require-prior-idle-ms = <200>;
+};
+//ここまで
+
 / {
     trackball_listener {
         compatible = "zmk,input-listener";
@@ -58,7 +69,7 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&xiao_d 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; //MOT-D6
-//        automouse-layer = <1>;
+//20260502無効化        automouse-layer = <1>;
         snipe-layers = <2>;
         scroll-layers = <5>;
         //scroll-layers = <4 5 6>;
