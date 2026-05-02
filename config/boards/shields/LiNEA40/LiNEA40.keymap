@@ -9,10 +9,9 @@
 #define MOUSE 1
 #define MARK 2
 #define CURSOR 3
-#define NUMBER 4
-#define FUNCTION 5
+#define FUNCTION 4
+#define SCROLL 5
 #define WIRELESS 6
-#define SCROLL 7
 
 //mouse cursol
 &mmv {
@@ -45,7 +44,7 @@
 
 &msc_input_listener {
     speed_up {
-        layers = <NUMBER>;
+        layers = <FUNCTION>;
         input-processors = <&zip_wheel_scaler 3 1>; //スクロールを3倍速にする
     };
 };
