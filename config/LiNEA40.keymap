@@ -11,10 +11,13 @@
 #define MOUSE 1
 #define MARK 2
 #define CURSOR 3
-#define NUMBER 4 //20260502修正
-#define FUNCTION 5 //20260502修正
+ //20260502修正ここから
+#define NUMBER 4
+#define FUNCTION 5
+//ここまで
 #define WIRELESS 6
-#define SCROLL 7 //20260502追記
+//20260502追記ここから
+#define SCROLL 7
 //ここまで
 
 //mouse cursol
