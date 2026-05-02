@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -94,11 +94,6 @@
         ClickNext {
             bindings = <&mkp MB5>;
             key-positions = <27 28>;
-        };
-
-        Centerclick {
-            bindings = <&mkp MB3>;
-            key-positions = <18 16 17>;
         };
 
         Escape {
@@ -138,16 +133,14 @@
 
         default_layer {
             bindings = <
-&kp Q    &kp W         &kp E         &kp R   &kp T                                           &kp Y        &kp U  &kp I         &kp O       &lt 7 P
-&kp A    &kp S         &kp D         &kp F   &kp G                                           &kp H        &kp J  &kp K         &kp L       &kp MINUS
+&kp Q    &kp W         &kp E         &kp R   &kp T                                           &kp Y        &kp U  &kp I         &kp O       &kp P
+&kp A    &kp S         &kp D         &kp F   &kp G                                           &kp H        &kp J  &kp K         &kp L       &lt 7 MINUS
 &kp Z    &kp X         &kp C         &kp V   &kp B                                           &kp N        &kp M  &kp COMMA     &kp DOT     &kp SLASH
-&kp TAB  &kp LEFT_WIN  &kp LEFT_ALT  &trans  &lt 2 SPACE  &kp LEFT_SHIFT    &lt 4 BACKSPACE  &lt 3 ENTER         &lt 6 DELETE  &lt 5 SEMI  &kp RIGHT_SHIFT
+&kp TAB  &kp LEFT_WIN  &kp LEFT_ALT  &trans  &lt 2 SPACE  &kp LEFT_SHIFT    &lt 3 BACKSPACE  &lt 4 ENTER         &lt 5 DELETE  &lt 6 SEMI  &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
         };
-
-        //1
 
         MOUSE {
             bindings = <
@@ -158,31 +151,16 @@
             >;
         };
 
-        //2
-
         MARK {
             bindings = <
-&kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT                    &kp CARET    &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp QUESTION     &trans  &trans    &trans      &trans                         &kp MINUS    &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp BACKSLASH
-&trans           &trans  &trans    &trans      &trans                         &kp INT_YEN  &kp SLASH      &kp SEMI          &kp APOS              &kp COLON
-&trans           &trans  &trans    &trans      &trans       &trans    &trans  &trans                      &trans            &trans                &trans
+&kp EXCLAMATION  &kp AT     &kp HASH   &kp DOLLAR   &kp PERCENT                    &kp CARET      &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp QUESTION     &kp UNDER  &kp SLASH  &kp INT_YEN  &trans                         &kp MINUS      &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp BACKSLASH
+&trans           &trans     &trans     &trans       &trans                         &kp SEMICOLON  &kp COLON      &kp APOS          &trans                &trans
+&trans           &trans     &trans     &trans       &trans       &trans    &trans  &trans                        &trans            &trans                &trans
             >;
         };
 
-        //3
-
-        NUMBER {
-            bindings = <
-&kp N1  &kp N2  &kp N3  &kp N4  &kp N5                    &kp N6  &kp N7  &kp N8     &kp N9     &kp N0
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &kp EQUAL  &kp PLUS   &kp MINUS
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &kp SLASH  &kp ASTRK  &kp INT_YEN
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &kp DOT    &trans     &trans
-            >;
-        };
-
-        //4
-
-        SHORTCUT-MOVE {
+        CURSOR {
             bindings = <
 &trans     &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(L)                    &trans    &trans    &kp UP_ARROW    &trans           &trans
 &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &trans                       &trans    &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PRINTSCREEN
@@ -193,18 +171,25 @@
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
-        //5
+        NUMBER {
+            bindings = <
+&trans        &trans        &trans        &trans        &trans                          &trans        &trans        &trans        &trans        &trans
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+&trans        &trans        &trans        &trans        &trans                          &kp PLUS      &kp MINUS     &kp ASTRK     &kp SLASH     &kp EQUAL
+&trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans                      &kp DOT       &trans        &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+        };
 
         FUNCTION {
             bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans   &trans
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                    &kp F6  &kp F7  &kp F8  &kp F9   &kp F10
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans  &trans   &trans
             >;
         };
-
-        //6
 
         WIRELESS {
             bindings = <
