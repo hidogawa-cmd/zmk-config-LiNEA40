@@ -20,7 +20,6 @@
         17 // K
         18 // l
     >;
-    require-prior-idle-ms = <200>;
 };
 //ここまで
 
