@@ -1,4 +1,13 @@
 #include "LiNEA40.dtsi"
+
+&zip_temp_layer {
+    excluded-positions = <
+        16 // J
+        17 // K
+        18 // l
+    >;
+};
+
 &default_transform {
     col-offset = <6>;
 };
@@ -11,14 +20,6 @@
         , <&xiao_d 7 GPIO_ACTIVE_HIGH>  //col3-D7
         , <&gpio0 10 GPIO_ACTIVE_HIGH>  //col4-NFC2
         ;
-};
-
-&zip_temp_layer {
-    excluded-positions = <
-        16 // J
-        17 // K
-        18 // l
-    >;
 };
 
 / {
