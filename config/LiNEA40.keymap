@@ -58,7 +58,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -154,10 +154,10 @@
 
         MARK {
             bindings = <
-&kp EXCLAMATION  &kp AT         &kp HASH   &kp DOLLAR   &kp PERCENT                    &kp RS(AMPERSAND)  &kp RS(APOS)  &kp RS(ASTERISK)  &kp RS(NUMBER_9)   &kp RS(NUMBER_0)
-&kp QUESTION     &kp LS(MINUS)  &kp SLASH  &kp INT_YEN  &trans                         &kp MINUS          &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
-&trans           &trans         &trans     &trans       &trans                         &kp SEMICOLON      &kp COLON     &kp APOS          &trans             &trans
-&trans           &trans         &trans     &trans       &trans       &trans    &trans  &trans                           &trans            &trans             &trans
+&kp EXCLAMATION  &kp LS(NUMBER_2)  &kp HASH   &kp DOLLAR   &kp PERCENT                    &kp RS(AMPERSAND)  &kp RS(APOS)  &kp RS(ASTERISK)  &kp RS(NUMBER_9)   &kp RS(NUMBER_0)
+&kp QUESTION     &kp LS(MINUS)     &kp SLASH  &kp INT_YEN  &trans                         &kp MINUS          &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
+&trans           &trans            &trans     &trans       &trans                         &kp SEMICOLON      &kp COLON     &kp APOS          &trans             &trans
+&trans           &trans            &trans     &trans       &trans       &trans    &trans  &trans                           &trans            &trans             &trans
             >;
         };
 
