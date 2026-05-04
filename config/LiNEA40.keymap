@@ -58,7 +58,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -154,10 +154,10 @@
 
         MARK {
             bindings = <
-&kp DOLLAR   &kp CARET          &kp PERCENT    &kp LT            &kp GREATER_THAN                    &kp RS(CARET)  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp PLUS       &kp EQUAL
-&kp INT_YEN  &kp QUESTION       &kp EXCL       &kp LEFT_BRACKET  &kp SEMI                            &kp MINUS      &kp ASTRK          &kp RS(N9)     &kp RS(MINUS)  &trans
-&kp HASH     &kp DOUBLE_QUOTES  &kp AMPERSAND  &kp AT            &kp SINGLE_QUOTE                    &kp UNDER      &kp RIGHT_BRACE    &kp PIPE       &trans         &trans
-&trans       &trans             &trans         &trans            &trans            &trans    &trans  &trans                            &trans         &trans         &trans
+&kp DOLLAR   &kp CARET          &kp PERCENT    &kp LT            &kp GREATER_THAN                    &kp RS(PLUS)  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp PLUS       &kp EQUAL
+&kp INT_YEN  &kp QUESTION       &kp EXCL       &kp LEFT_BRACKET  &kp SEMI                            &kp MINUS     &kp ASTRK          &kp RS(N9)     &kp RS(UNDER)  &trans
+&kp HASH     &kp DOUBLE_QUOTES  &kp AMPERSAND  &kp AT            &kp SINGLE_QUOTE                    &kp UNDER     &kp RIGHT_BRACE    &kp PIPE       &trans         &trans
+&trans       &trans             &trans         &trans            &trans            &trans    &trans  &trans                           &trans         &trans         &trans
             >;
         };
 
