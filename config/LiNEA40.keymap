@@ -58,7 +58,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -163,10 +163,10 @@
 
         CURSOR {
             bindings = <
-&trans     &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(L)                    &trans    &trans    &kp UP_ARROW    &trans           &trans
-&kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &trans                       &trans    &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PRINTSCREEN
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans                       &kp HOME  &kp END   &kp PAGE_UP     &kp PAGE_DOWN    &trans
-&trans     &trans     &trans     &trans     &trans     &trans    &trans  &trans              &trans          &trans           &trans
+&trans     &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(L)                        &trans    &trans    &kp UP_ARROW    &trans           &trans
+&kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &trans                           &trans    &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PRINTSCREEN
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LA(SPACE)                    &kp HOME  &kp END   &kp PAGE_UP     &kp PAGE_DOWN    &trans
+&trans     &trans     &trans     &trans     &trans         &trans    &trans  &trans              &trans          &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
